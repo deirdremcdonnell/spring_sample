@@ -2,6 +2,8 @@
 package com.pluralsight.repository;
 
 import com.pluralsight.model.Customer;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 /**
  * HibernateCustomerRepositoryImpl
  */
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepostitory {
 
 
